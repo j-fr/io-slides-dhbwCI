@@ -21,6 +21,33 @@ URL: https://code.google.com/p/io-2012-slides
   <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
   <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+  <!-- hack to enable Printing -->
+  <style media="print">
+         @page {
+            size: A4 landscape;
+             @top-right {
+                content: "Page " counter(page);
+             }
+         }
+          article {
+            page-break-after: always;
+            margin: auto;
+          }
+          article.next, article.past {
+            display: block;    
+          }
+          body {
+              display: block !important;
+              font-family: 'Open Sans', Arial, sans-serif;
+              font-size: 1.5em;
+          }
+      </style>
+      <script type="text/javascript">
+        window.addEventListener('load', function(){
+            var link = document.getElementsByTagName('link');
+            link[link.length-1].setAttribute ("media","screen");
+        });
+        </script>
 </head>
 <body style="opacity: 0">
 
@@ -365,7 +392,7 @@ function helloWorld(world) {
       <h2>Slide with Iframe</h2>
     </hgroup>
     <article>
-      <iframe width="560" height="315" src="//www.youtube.com/embed/rDZ1AjDJjFI?rel=0" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rDZ1AjDJjFI?rel=0" frameborder="0" allowfullscreen></iframe>
       <!--<iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe> -->
     </article>
   </slide>
