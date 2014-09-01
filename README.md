@@ -1,4 +1,4 @@
-Based on the  by [`io-slides template-2012`](https://code.google.com/p/io-2012-slides/) google
+Based on the  by [`io-slides template-2012`](https://code.google.com/p/io-2012-slides/) by google
 
 
 ## Configuring the slides
