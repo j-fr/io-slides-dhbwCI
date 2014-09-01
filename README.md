@@ -1,3 +1,6 @@
+Based on the  by [`io-slides template-2012`](https://code.google.com/p/io-2012-slides/) google
+
+
 ## Configuring the slides
 
 Much of the deck is customized by changing the settings in [`slide_config.js`](slide_config.js).
